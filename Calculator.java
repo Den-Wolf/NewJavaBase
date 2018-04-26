@@ -5,6 +5,8 @@ import java.io.InputStreamReader;
 
 public class Calculator {
     public static void main(String args[]) throws Exception {
+        print("Введите выражение для подсчёта (Например \"5 * 10\") и нажмите Enter");
+        print("Либо введите \"exit\" для выхода");
         while (true) {
             String setOfActions[] = readExpression();
             didExpression(Double.parseDouble(setOfActions[0]), setOfActions[1], Double.parseDouble(setOfActions[2]));
@@ -59,5 +61,6 @@ public class Calculator {
             default:
                 break;
         }
+        print("");
     }
 }
