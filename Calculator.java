@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 public class Calculator {
     public static void main(String args[]) throws Exception {
-        print("Введите выражение для подсчёта (Например \"5 * 10\") и нажмите Enter");
+        print("Введите выражение для обработки (Например \"5 * 10\") и нажмите Enter");
         print("Либо введите \"exit\" для выхода");
         while (true) {
             String setOfActions[] = readExpression();
@@ -31,8 +31,8 @@ public class Calculator {
             } else if (
                     splittedQuery.length == 3
                             && splittedQuery[1].matches("\\+|\\-|\\*|\\/|\\%|\\^")
-                            && splittedQuery[0].matches("((-|\\+)?[0-9]+(\\.[0-9]+)?)+")
-                            && splittedQuery[2].matches("((-|\\+)?[0-9]+(\\.[0-9]+)?)+")
+                            && splittedQuery[0].matches("(-|\\+)?[0-9]+(\\.[0-9]+)?")
+                            && splittedQuery[2].matches("(-|\\+)?[0-9]+(\\.[0-9]+)?")
                     ) {
                 return splittedQuery;
             }
