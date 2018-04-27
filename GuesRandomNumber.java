@@ -39,10 +39,7 @@ public class GuesRandomNumber {
 
     }
 
-    public static void print(Object obj) throws Exception {
-        /*String str = obj.toString();
-        byte[] b = str.getBytes("Cp866");
-        String str2 = new String(b,"Cp1251");*/
+    public static void print(Object obj) {
         System.out.println(obj);
     }
 
